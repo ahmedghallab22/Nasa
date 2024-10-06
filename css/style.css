@@ -1,0 +1,93 @@
+:root {
+    --main-color: rgb(255, 255, 255);
+}
+
+#header {
+    background-image: url(../1.webp);
+    background-size: cover;
+    background-position: center; /* توسيط الصورة */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
+    height: 100vh; /* 100% من ارتفاع النافذة */
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar-brand {
+    color: var(--main-color);
+}
+
+.navbar-brand:hover {
+    color: var(--main-color);
+}
+
+span {
+    color: var(--main-color);
+}
+
+header-caption h2 {
+    font-size: 2rem;
+}
+
+#nav-bar {
+    background-color: #1E1E1E;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: var(--main-color);
+    transition: all 300ms;
+}
+
+#about {
+    background-color: black;
+    padding: 50px 0; /* إضافة مساحة داخلية للأعلى والأسفل */
+}
+
+#text {
+    color: var(--main-color);
+    font-size: 1.5rem; /* تعديل حجم الخط */
+}
+
+#text-caption {
+    color: white;
+    font-size: 1rem; /* تعديل حجم الخط */
+}
+
+#button {
+    margin-top: 20px; /* إضافة مسافة أعلى الزر */
+}
+
+/* تحسينات للخريطة */
+#map {
+    margin: 50px 0; /* إضافة مسافة فوق وتحت الخريطة */
+}
+
+#map iframe {
+    border: none; /* إزالة الحدود حول الإطار */
+    width: 100%; /* العرض 100% */
+    height: 600px; /* ارتفاع ثابت للخريطة */
+}
+
+/* تحسينات على قسم الاتصال */
+#contact_us {
+    padding: 50px 0; /* إضافة مساحة داخلية للأعلى والأسفل */
+}
+
+#exampleFormControlInput1, 
+#exampleFormControlTextarea1 {
+    max-width: 600px; /* تحديد عرض أقصى للحقول */
+    width: 100%; /* العرض 100% */
+}
+
+#button {
+    margin-left: 0; /* إلغاء المسافة على اليسار */
+    display: block; /* جعل الزر يحتل سطرًا كاملًا */
+    width: fit-content; /* عرض الزر يتناسب مع المحتوى */
+    margin: 20px auto 0; /* توسيط الزر */
+}

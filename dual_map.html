@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dc4d50f2aa82f36b7463c64864ca77dc {
+                    position: absolute;
+                    width: 50.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d9bf8da4b6d73704a925d84bffdbec18 {
+                    position: absolute;
+                    width: 50.0%;
+                    height: 100.0%;
+                    left: 50.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/jieter/Leaflet.Sync/L.Map.Sync.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dc4d50f2aa82f36b7463c64864ca77dc" ></div>
+        
+    
+            <div class="folium-map" id="map_d9bf8da4b6d73704a925d84bffdbec18" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dc4d50f2aa82f36b7463c64864ca77dc = L.map(
+                "map_dc4d50f2aa82f36b7463c64864ca77dc",
+                {
+                    center: [26.820553, 30.802498],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e73e9cc0300be36ff0d84e107f0800d4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e73e9cc0300be36ff0d84e107f0800d4.addTo(map_dc4d50f2aa82f36b7463c64864ca77dc);
+        
+    
+            var tile_layer_bfb8ab396e05749e103148e7ef82d9b3 = L.tileLayer(
+                "https://earth.gov/ghgcenter/api/raster/collections/odiac-ffco2-monthgrid-v2023/items/odiac-ffco2-monthgrid-v2023-odiac2023_1km_excl_intl_202001/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?assets=co2-emissions\u0026color_formula=gamma+r+1.05\u0026colormap_name=rainbow\u0026rescale=-675.1028442382812%2C31415.447265625",
+                {"attribution": "GHG", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 0.8, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bfb8ab396e05749e103148e7ef82d9b3.addTo(map_dc4d50f2aa82f36b7463c64864ca77dc);
+        
+    
+            var map_d9bf8da4b6d73704a925d84bffdbec18 = L.map(
+                "map_d9bf8da4b6d73704a925d84bffdbec18",
+                {
+                    center: [26.820553, 30.802498],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_35c529a609768ee66d4513bbb683584d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_35c529a609768ee66d4513bbb683584d.addTo(map_d9bf8da4b6d73704a925d84bffdbec18);
+        
+    
+            var tile_layer_7a2bb5b8d6a5a58d697cbf1eff607dae = L.tileLayer(
+                "https://earth.gov/ghgcenter/api/raster/collections/odiac-ffco2-monthgrid-v2023/items/odiac-ffco2-monthgrid-v2023-odiac2023_1km_excl_intl_200001/tiles/WebMercatorQuad/{z}/{x}/{y}@1x?assets=co2-emissions\u0026color_formula=gamma+r+1.05\u0026colormap_name=rainbow\u0026rescale=-675.1028442382812%2C31415.447265625",
+                {"attribution": "GHG", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 0.8, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_7a2bb5b8d6a5a58d697cbf1eff607dae.addTo(map_d9bf8da4b6d73704a925d84bffdbec18);
+        
+    
+            map_dc4d50f2aa82f36b7463c64864ca77dc.sync(map_d9bf8da4b6d73704a925d84bffdbec18);
+            map_d9bf8da4b6d73704a925d84bffdbec18.sync(map_dc4d50f2aa82f36b7463c64864ca77dc);
+        
+</script>
+</html>
